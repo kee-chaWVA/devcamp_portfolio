@@ -56,3 +56,4 @@ gem 'ostruct', '~> 0.3.1'
 
 gem 'bootstrap', '~> 4.5.3'
 gem 'jquery-rails', '~> 4.4'
+gem 'cha_view_tool', git: 'https://github.com/kee-chaWVA/cha_view_tool'
