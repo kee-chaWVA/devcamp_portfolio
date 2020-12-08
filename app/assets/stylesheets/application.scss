@@ -5,9 +5,12 @@
  */
 
 /* Links */
-a,
 a:focus,
 a:hover {
+  color: #fff;
+}
+
+a {
   color: #fff;
 }
 
@@ -70,7 +73,7 @@ body {
 }
 
 .masthead-brand {
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .nav-masthead .nav-link {
@@ -157,6 +160,6 @@ body {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 42rem;
+    width: 55rem;
   }
 }
