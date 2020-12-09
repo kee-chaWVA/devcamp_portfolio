@@ -7,7 +7,7 @@ end
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.1.7'
+gem 'rails', '~> 5.2'
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
@@ -53,7 +53,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'friendly_id', '~> 5.1.0'
 gem 'devise', '~> 4.7', '>= 4.7.3'
 gem 'ostruct', '~> 0.3.1'
-gem 'bootstrap', '~> 5.0.0.alpha3'
+gem 'bootstrap', '~> 4.5.3'
 gem 'jquery-rails', '~> 4.4'
 gem 'cha_view_tool', git: 'https://github.com/kee-chaWVA/cha_view_tool'
 gem 'petergate', '~> 2.0', '>= 2.0.1'
