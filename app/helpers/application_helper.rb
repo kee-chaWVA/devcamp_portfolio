@@ -19,3 +19,4 @@ module ApplicationHelper
     ChaViewTool::Renderer.copyright 'Kee Cha', 'All rights reserved'
   end
 end
+  

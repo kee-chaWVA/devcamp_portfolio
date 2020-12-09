@@ -1,16 +1,12 @@
-@import "bootstrap"
-
+@import "bootstrap";
 /*
  * Globals
  */
 
 /* Links */
+a,
 a:focus,
 a:hover {
-  color: #fff;
-}
-
-a {
   color: #fff;
 }
 
@@ -73,7 +69,7 @@ body {
 }
 
 .masthead-brand {
-  margin: 0;
+  margin-bottom: 0;
 }
 
 .nav-masthead .nav-link {
@@ -160,6 +156,6 @@ body {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 55rem;
+    width: 42rem;
   }
 }
