@@ -13,12 +13,9 @@
 
   <body class="text-center">
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-      <%= render "shared/application_nav"%>  
-        
+      <%= render "shared/application_nav" %>  
       <%= yield %>
-      <%= render "shared/application_footer"%>
-
-        
+      <%= render "shared/application_footer" %>
       <%= source_helper("application") %>
     </div>
   </body>
