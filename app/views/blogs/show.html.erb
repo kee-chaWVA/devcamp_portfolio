@@ -1,14 +1,13 @@
-<p id="notice"><%= notice %></p>
+<div class="col-md-8 blog-main">
+  <div class="pb-4 mb-4 font-italic border-bottom">
+    <h3>
+      From the Firehose
+    </h3>
+    <%= link_to 'Write a New Blog', new_blog_path if logged_in?(:site_admin) %>
+  </div>
+  <h2><%= @blog.title %></h2>
+  <%= link_to 'Edit', edit_blog_path(@blog) if logged_in?(:site_admin) %>
+  <p><%= @blog.body %></p>
+</div>
 
-<p>
-  <strong>Title:</strong>
-  <%= @blog.title %>
-</p>
 
-<p>
-  <strong>Body:</strong>
-  <%= @blog.body %>
-</p>
-
-<%= link_to 'Edit', edit_blog_path(@blog) if logged_in?(:site_admin) %> |
-<%= link_to 'Back', blogs_path %>
