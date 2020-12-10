@@ -14,7 +14,7 @@
 
   <body>
     <%= render "shared/portfolio_masthead" %>
-    <%= render "shared/portfolio_jumbotron" %>
+    <%= render "shared/portfolio_jumbotron" unless logged_in?(:site_admin) %>
     <%= yield %>
     <%= render "shared/portfolio_footer" %>
     <%= source_helper("application") %>  
