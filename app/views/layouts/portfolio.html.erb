@@ -14,12 +14,7 @@
 
   <body>
     <%= render "shared/portfolio_masthead" %>
-
-    <%= render "shared/application_nav" %>
     <%= render "shared/portfolio_jumbotron" %>
-
-    <%= login_helper %>
-
     <%= yield %>
     <%= render "shared/portfolio_footer" %>
     <%= source_helper("application") %>  
