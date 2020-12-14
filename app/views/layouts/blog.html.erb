@@ -22,8 +22,9 @@
         <%= yield %>
         <%= render 'shared/blog_sidebar' %>
       </div>
-      <%= source_helper("blog") %>
     </main>
     <%= render "shared/blog_footer" %>
+    <%= alerts %>
+    <%= source_helper("blog") %>
   </body>
 </html>
