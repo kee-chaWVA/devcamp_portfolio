@@ -24,6 +24,7 @@ module DevcampPortfolio
     # config.load_defaults 5.1
     # config.action_controller.permit_all_parameters = true
     # Don't generate system test files.
+    config.eager_load_paths << "#{Rails.root}/lib"
     config.generators.system_tests = nil
 
   end
