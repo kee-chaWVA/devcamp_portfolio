@@ -1,17 +1,17 @@
 jQuery(document).on 'turbolinks:load', ->
   comments = $('#comments')
   if comments.length > 0
-    App.global_chat = App.cable.subscriptions.create{
+    App.global_chat = App.cable.subscriptions.create {
       channel: "BlogsChannel"
-      blog_id: comment.data('blog-id')
+      blog_id: comments.data('blog-id')
     },
     connected: ->
     disconnected: ->
     received: (data) ->
-      comments.append data('comment')
+      comments.append data['comment']
     send_comment: (comment, blog_id) ->
       @perform 'send_comment', comment: comment, blog_id: blog_id
-  $('#new_comment'),submit (e) ->
+  $('#new_comment').submit (e) ->
     $this = $(this)
     textarea = $this.find('#comment_content')
     if $.trim(textarea.val()).length > 1
