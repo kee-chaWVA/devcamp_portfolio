@@ -133,7 +133,12 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 
-.breadcrumb-icon {
-  text-align: right;
-  justify-content: right;
+.breadcrumb p {
+  display: flex;
+  float: right;
+}
+
+.blogcrumb a {
+  font-size: 1.25rem;
+  margin: 0 10px 0 10px
 }
