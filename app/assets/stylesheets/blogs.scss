@@ -117,7 +117,6 @@ h1, h2, h3, h4, h5, h6 {
 .active,
 .active-nav:hover {
     font-weight: bold;
-    border-bottom: 2px solid #6c757d;
 }
 
 .comment-card > .card {
@@ -133,12 +132,21 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 
-.breadcrumb p {
-  display: flex;
-  float: right;
+.custom-breadcrumb {
+  list-style-type: none;
+  border-radius: .25rem;
+  background-color: #e9ecef;
+  margin-bottom: 1rem;
+  padding: .75rem 1rem;
 }
-
+.breadcrumb-item {
+  display: inline-block;
+}
 .blogcrumb a {
   font-size: 1.25rem;
   margin: 0 10px 0 10px
+}
+
+.blog-nav {
+  margin-bottom: 30px;
 }
