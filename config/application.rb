@@ -25,6 +25,7 @@ module DevcampPortfolio
     # config.action_controller.permit_all_parameters = true
     # Don't generate system test files.
     config.eager_load_paths << "#{Rails.root}/lib"
+    config.secret_key_base = ENV["SECRET_KEY_BASE"]
     config.generators.system_tests = nil
 
   end
