@@ -1,10 +1,8 @@
 <div class="col-md-8 blog-main">
   <div class="pb-4 mb-4 font-italic border-bottom">
-    <h3>
-      From the Firehose
-    </h3>
-    <%= link_to 'Write a New Blog', new_blog_path if logged_in?(:site_admin) %>
-    <%= link_to 'Topics', topics_path %>
+    <h1>
+      <%= @topic.title %>
+    </h1>
   </div>
   <nav class="blog-pagination">
     <%= paginate @blogs %>
@@ -17,4 +15,3 @@
   </nav>
 
 </div>
-

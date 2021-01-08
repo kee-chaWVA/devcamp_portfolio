@@ -67,6 +67,7 @@ gem 'dotenv-rails', '~> 2.7', '>= 2.7.6'
 gem 'cocoon', '~> 1.2', '>= 1.2.15'
 gem 'gritter', '~> 1.2'
 gem 'twitter', '~> 7.0'
-
+gem 'redcarpet', '~> 3.5', '>= 3.5.1'
+gem 'coderay', '~> 1.1', '>= 1.1.3'
 
 

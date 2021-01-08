@@ -23,7 +23,14 @@ a:hover {
   border: .05rem solid #fff;
 }
 
-
+@font-face {
+  font-family: 'Lato', sans-serif;
+  src: url('Lato-Regular.ttf');
+}
+@font-face {
+  font-family: 'Roboto Slab', serif;
+  src: url('RobotoSlab-Regular.ttf');
+}
 /*
  * Base structure
  */
@@ -31,6 +38,16 @@ a:hover {
 html,
 body {
   height: 100%;
+  font-family: 'Lato', sans-serif;
+}
+
+h1, .h1
+h2, .h2
+h3, .h3
+h4, .h4
+h5, .h5
+h6, .h16 {
+  font-family: 'Roboto Slab', serif;
 }
 
 body {
@@ -164,4 +181,30 @@ body {
 }
 .tech-news > .card {
   padding: 20px;
+}
+
+.app-card-container {
+  color: black;
+  text-align: left;
+}
+
+.app-card-container > .card {
+  padding: 40px;
+}
+
+.app-card-container a {
+  color: blue;
+}
+.profile-img {
+  border: 1px solid grey;
+}
+
+.card-block {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.skill {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }

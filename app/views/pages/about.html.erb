@@ -1,11 +1,81 @@
-<h1>About Me</h1>
-<hr>
+<div class="app-card-container">
+  <div class="card">
+    <h1>About Me</h1>
+    <hr>
 
-<div class="row">
-  <div class="col-md-4">
-    <%= image_tag "profile.jpg", width: 300, alt: "Profile Image"%>
-  </div>
-  <div class="col-md-8">
-    <p>After years of working in the restaurant/hospitality field, I've decided to venture out into the world of technology enrolling in an intensive 12-week immersive software development bootcamp in 2019.  Upon completing in 2020, I then accepted a position and started my career as a Junior Web Developer.  My hopes and dreams with gaining this new found knowledge and skills are to implement new technologies to help enhance the way we as people live our lives.</p>
+    <div class="row">
+      <div class="col-md-4">
+        <%= image_tag "profile.jpg", width: 300, alt: "Profile Image", class: 'profile-img' %>
+        <div class="skills">
+          <div class="skill">
+            <% @skills.each do |skill| %>
+            <h4><%= skill.title %></h4>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped bg-warning"
+                    role= "progressbar"
+                    aria-valuenow="<%= skill.percent_utilized %>"
+                    aria-valuemax="100"
+                    style= "width: <%= skill.percent_utilized %>%"
+                    >
+              </div>
+            </div>
+          <% end %> 
+          </div>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <p>After years of working in the restaurant/hospitality field, I've decided to venture out into the world of technology enrolling in an intensive 12-week immersive software development bootcamp in 2019.  Upon completing in 2020, I then accepted a position and started my career as a Junior Web Developer.  My hopes and dreams with gaining this new found knowledge and skills are to implement new technologies to help enhance the way we as people live our lives.</p>
+
+        <p>
+          <button class="btn btn-primary"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#jobHistory"
+                  aria-expanded="false"
+                  aria-control="jobHistory"
+                  >
+            Job History
+          </button>
+        </p>          
+          <button class="btn btn-primary"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#education"
+                  aria-expanded="false"
+                  aria-control="education"
+                  >
+            Education
+          </button>
+        </p>
+        <p>
+          <div class="collapse" id="jobHistory">
+            <div class="card card-block">
+              JOB 1
+            </div>
+            <div class="card card-block">
+              JOB 2
+            </div>
+            <div class="card card-block">
+              JOB 3
+            </div>
+          </div>
+        </p>
+        <p>
+          <div class="collapse" id="education">
+            <div class="card card-block">
+              devCodeCamp
+            </div>
+            <div class="card card-block">
+              UW-Milwaukee
+            </div>
+            <div class="card card-block">
+              New Berlin West High School
+            </div>
+          </div>
+        </p>
+      </div>
+    </div>
   </div>
 </div>
+
+

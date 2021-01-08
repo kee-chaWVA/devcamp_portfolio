@@ -18,8 +18,12 @@
   text-decoration: none;
 }
 
+body {
+  font-family: 'Lato', sans-serif;
+}
+
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  font-family: 'Roboto Slab', serif;
 }
 
 .display-4 {
@@ -117,7 +121,6 @@ h1, h2, h3, h4, h5, h6 {
 .active,
 .active-nav:hover {
     font-weight: bold;
-    border-bottom: 2px solid #6c757d;
 }
 
 .comment-card > .card {
@@ -131,4 +134,27 @@ h1, h2, h3, h4, h5, h6 {
 
 .comment-name {
   font-weight: 700;
+}
+
+.custom-breadcrumb {
+  list-style-type: none;
+  border-radius: .25rem;
+  background-color: #e9ecef;
+  margin-bottom: 1rem;
+  padding: .75rem 1rem;
+}
+.breadcrumb-item {
+  display: inline-block;
+}
+.blogcrumb a {
+  font-size: 1.25rem;
+  margin: 0 10px 0 10px
+}
+
+.blog-nav {
+  margin-bottom: 30px;
+}
+
+.blog-sidebar-source {
+  margin-top: 20px;
 }
