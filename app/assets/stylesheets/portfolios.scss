@@ -16,6 +16,30 @@
   }
 }
 
+@font-face {
+  font-family: 'Lato', sans-serif;
+  src: url('Lato-Regular.ttf');
+}
+@font-face {
+  font-family: 'Roboto Slab', serif;
+  src: url('RobotoSlab-Regular.ttf');
+}
+
+html,
+body {
+  height: 100%;
+  font-family: 'Lato', sans-serif;
+}
+
+h1, .h1
+h2, .h2
+h3, .h3
+h4, .h4
+h5, .h5
+h6, .h16 {
+  font-family: 'Roboto Slab', serif;
+}
+
 .jumbotron p:last-child {
   margin-bottom: 0;
 }
