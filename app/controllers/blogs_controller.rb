@@ -32,8 +32,7 @@ class BlogsController < ApplicationController
   def new
     @blog = Blog.new
     if @blog.topic_id.nil?
-      @blog.update!(topic_id: 1, title: "Title", body: "Content")
-      @blog.save
+      @blog.update(topic_id: 1, title: "Title", body: "Content")
     end
   end
 
