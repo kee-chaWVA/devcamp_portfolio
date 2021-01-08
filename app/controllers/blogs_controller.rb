@@ -31,9 +31,6 @@ class BlogsController < ApplicationController
   # GET /blogs/new
   def new
     @blog = Blog.new
-    if @blog.topic_id.nil?
-      @blog.update(topic_id: 1, title: "Title", body: "Content")
-    end
   end
 
   # GET /blogs/1/edit
